@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script&family=Delicious+Handrawn&family=Noto+Sans:ital@1&family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary--text-color: rgb(96, 158, 219);
+    --secondary--text-color: rgb(27, 53, 85);
+    --accent-color: rgb(93, 105, 236);
+    --accent-color-dark: rgb(106, 178, 222);
+}
+
+body {
+    color: var(--primary--text-color);
+    font-family: 'Noto Sans', sans-serif;
+    background-color: rgb(189, 193, 196);
+}
+
+p {
+    color: var(--secondary--text-color);
+    line-height: 1.4rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+}
+
+nav {
+    background-color: rgb(16, 40, 62);
+    box-shadow: 0 0 4px rgb(147, 202, 229);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.main_nav {
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.nav-links ul {
+    gap: 15px;
+}
+
+.nav-links ul li {
+    color: rgb(12, 114, 157);
+}
+
+.hover-link {
+    cursor: pointer;
+}
+
+.hover-link:hover {
+    color: var(--accent-color-dark);
+}
+
+.hover-link:active {
+    color: var(--secondary--text-color);
+}
+
+.search-bar {
+    gap: 10px;
+    height: 30px;
+}
+
+.text-input {
+    width: 200px;
+    height: 100%;
+    padding: 12px 10px;
+    border: 2px solid rgb(16, 69, 83);
+    border-radius: 5px;
+}
+
+.search-button {
+    border-radius: 5px;
+    padding: 8px 8px;
+    background-color: var(--accent-color-dark);
+    color: rgb(239, 243, 240);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-button:hover {
+    background-color: rgb(5, 100, 159);
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    align-items: start;
+}
+
+.card-header img {
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgb(54, 164, 219);
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 30px rgb(25, 49, 83);
+    transform: translateY(-4px);
+}
+
+#news-title {
+    margin-block: 5px;
+}
+
+.news-source {
+    margin-block: 10px;
+}

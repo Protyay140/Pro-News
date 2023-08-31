@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO-NEWS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/fav.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="main_nav container flex">
+            <a href="#" class="logo">
+                <img src="/news-icon-18.png" alt="brand_name" srcset="">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" onclick="clickNav('technology')">Technology</li>
+                    <li class="hover-link nav-item" onclick="clickNav('football')">Football</li>
+                    <li class="hover-link nav-item" onclick="clickNav('cricket')">Cricket</li>
+                    <li class="hover-link nav-item" onclick="clickNav('bollywood')">Bollywood</li>
+                    <li class="hover-link nav-item" onclick="clickNav('hollywood')">Hollywood</li>
+                    <li class="hover-link nav-item" onclick="clickNav('india')">India</li>
+                    <li class="hover-link nav-item" onclick="clickNav('murder')">Murder</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" id="news-input" class="text-input" placeholder="e.g. cricket,stock etc..">
+                <button id="search-button" class="search-button">search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="/news1.jpg" alt="news-img" id="news-image">
+            </div>
+
+            <div class="card-content">
+                <h3 id="news-title">This is Title...</h3>
+                <h6 class="news-source" id="news-source">Ananda Bazar 2022</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
+                    enim ab! Accusantium ipsa quidem nobis vel et aut earum id.</p>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
